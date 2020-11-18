@@ -1,0 +1,37 @@
+fontawesome Kit:
+<script src="https://kit.fontawesome.com/f7695f2d09.js" crossorigin="anonymous"></script>
+=================================================
+Jquery Structure
+-----------------
+(function($){
+$(document).ready(function(){
+
+
+// Do code here
+
+});
+})(jQuery)
+------------------------------------------------
+take a id in logout button ; example
+<a class="dropdown-item" id="logout" href="">Logout</a>
+
+----------------------------------------------
+
+<form id="logout_form" action="{{route('logout')}}" method="POST" class="d-none">
+    @csrf
+
+</form>
+
+Logout form submit using jquery
+=============================
+$('a#logout').click(function(e){
+
+	e.preventDefault();
+
+	$('form#logout_form').submit();
+
+
+
+});
+
+=========================================

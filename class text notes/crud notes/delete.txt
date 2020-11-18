@@ -1,0 +1,12 @@
+    public function destroy($id)
+    {
+       $data = postCat::find($id);
+       $data->delete();
+       return redirect() -> route('post-category.index') -> with('success','Category Deleted successfully');
+    }
+
+<form class="d-inline" action="{{route('post-category.destroy',$d->id)}}" method="POST">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button class="btn btn-danger btn-sm">Delete</button>
+                                </form>

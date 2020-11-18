@@ -1,0 +1,19 @@
+  {
+        $this -> validate($request,[
+
+            'name' => 'required|unique:post_cats,cat_name'
+ // post_cats=table name // cat-name=column name // for multiple unique column use (). email,cell,username.
+
+        ]);
+
+        postCat::create([
+
+            'cat_name' => $request -> name,
+            'slug' => Str::slug($request -> name),
+
+
+        ]);
+
+
+        return redirect() -> route('post-category.index') -> with('success','Category Added successfully');
+    }

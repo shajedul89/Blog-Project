@@ -1,0 +1,20 @@
+ public function index()
+
+    {
+        $data= postCat::all();
+        return view('backend.category.index',[
+            'all_data' => $data,
+        ]);
+    }
+
+-------------------------------------
+
+ @foreach($all_data as $d)
+                    <tr>
+                        <td>{{$loop->index+1}}</td>
+                        <td>{{$d->cat_name}}</td>
+                        <td>{{$d->slug}}</td>
+                        <td>{{$d->status}}</td>
+                        <td><a href="#edit_cat" data-toggle="modal" class="btn btn-info btn-sm ">Edit</a> <a href="" class="btn btn-danger btn-sm">Delete</a></td>
+                    </tr>
+                    @endforeach

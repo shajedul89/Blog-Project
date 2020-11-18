@@ -1,0 +1,106 @@
+  
+Test Process
+============================
+$.ajax({
+            url:'post-category-edit',
+            success: function(data){
+                alert(data);
+            }
+        });
+
+url route: Route::get('post-category-edit','App\Http\Controllers\postCategory@edit');
+
+function:
+--------
+  public function edit()
+    {
+        echo "HI";
+    }
+---------
+
+pass with id
+==========================
+$.ajax({
+            url:'post-category-edit/'+ id,
+            success: function(data){
+                alert(data);
+            }
+        });
+
+
+url route: Route::get('post-category-edit/{id}','App\Http\Controllers\postCategory@edit');
+
+function:
+--------
+    public function edit($id)
+    {
+        echo $id;
+    }
+---------
+
+
+Final Process:
+===============================
+
+// category edit // view
+    $(document).on('click','a#cat_edit',function (e){
+        e.preventDefault();
+
+        let id=$(this).attr('cat_id');
+
+        $.ajax({
+            url:'post-category-edit/'+ id,
+            dataType:"json",
+            success: function(data){
+                $('#edit_cat form input[name="name"]').val(data.name);
+            }
+        });
+    });
+
+function:
+-------------------------
+ public function edit($id)
+    {
+        $data = postCat::find($id);
+        return [
+          'name' =>   $data -> cat_name,
+          'id' =>   $data -> id,
+        ];
+    }
+------------------
+  public function update(Request $request)
+    {
+
+	// return $request->all();
+       $id= $request ->id;
+       $data = postCat::find($id);
+       $data -> cat_name = $request->name;
+       $data -> slug = Str::slug($request->name);
+       $data -> update();
+
+        return redirect() -> route('post-category.index') -> with('success','Category Updated successfully');
+
+    }
+
+-----------------
+
+Route::get('post-category-edit/{id}','App\Http\Controllers\postCategory@edit');
+Route::post('post-category-update','App\Http\Controllers\postCategory@update') -> name('category.update');
+--------------------------
+
+design part
+----------------
+
+<form action="{{route('category.update')}}" method="POST">
+                        @csrf
+                        <div class="from-group">
+                            <input type="text" name="name" class="form-control" placeholder="Enter Category name ">
+                            <input type="hidden" name="id" class="form-control" placeholder="Enter Category name ">
+                        </div>
+
+                        <div class="from-group mt-2">
+                            <input type="submit"  class=" btn btn-primary  float-right" value="Update">
+                        </div>
+                    </form>
+-------------------------------------------
+

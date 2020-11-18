@@ -1,0 +1,23 @@
+
+@extends('layouts.app')
+
+@section('main-content')
+
+
+// content which will load
+
+@endsection
+
+-----------------------------------------
+
+@section('main-content')
+@show // load content will show
+
+---------------------------------------------
+
+include other files
+---------------------------
+   @include('layouts.partials.style')
+
+---------------------------------------
+@yield('header-titile')
