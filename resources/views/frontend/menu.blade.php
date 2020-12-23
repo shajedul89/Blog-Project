@@ -16,134 +16,134 @@
 						<a class="navbar-brand" href="index.html">
 							<img src=" public/frontend/assets/img/black-logo.png" alt="Logo">
 						</a>
-						
+
 						<div class="collapse navbar-collapse mean-menu">
 							<ul class="navbar-nav m-auto">
 								<li class="nav-item">
 									<a href="{{url('/')}}" class="nav-link active">
 										Home
-									
+
 									</a>
 								</li>
 
 								<li class="nav-item">
-									<a href="#" class="nav-link">
+									<a href="{{route('single.post')}}" class="nav-link">
 										Pages
-										<i class="bx bx-chevron-down"></i>
+{{--										<i class="bx bx-chevron-down"></i>--}}
 									</a>
 
-									<ul class="dropdown-menu">
-										<li class="nav-item">
-											<a href="#" class="nav-link">
-												Post With Sidebar
-												<i class="bx bx-chevron-right"></i>
-											</a>
-	
-											<ul class="dropdown-menu">
-												<li class="nav-item">
-													<a href="post-style-one.html" class="nav-link">Post Style One</a>
-												</li>
-												<li class="nav-item">
-													<a href="post-style-two.html" class="nav-link">Post Style Two</a>
-												</li>
-												<li class="nav-item">
-													<a href="post-style-three.html" class="nav-link">Post Style Three</a>
-												</li>
-												<li class="nav-item">
-													<a href="post-style-four.html" class="nav-link">Post Style Four</a>
-												</li>
-												<li class="nav-item">
-													<a href="post-style-five.html" class="nav-link">Post Style Five</a>
-												</li>
-											</ul>
-										</li>
+{{--									<ul class="dropdown-menu">--}}
+{{--										<li class="nav-item">--}}
+{{--											<a href="#" class="nav-link">--}}
+{{--												Post With Sidebar--}}
+{{--												<i class="bx bx-chevron-right"></i>--}}
+{{--											</a>--}}
+{{--	--}}
+{{--											<ul class="dropdown-menu">--}}
+{{--												<li class="nav-item">--}}
+{{--													<a href="post-style-one.html" class="nav-link">Post Style One</a>--}}
+{{--												</li>--}}
+{{--												<li class="nav-item">--}}
+{{--													<a href="post-style-two.html" class="nav-link">Post Style Two</a>--}}
+{{--												</li>--}}
+{{--												<li class="nav-item">--}}
+{{--													<a href="post-style-three.html" class="nav-link">Post Style Three</a>--}}
+{{--												</li>--}}
+{{--												<li class="nav-item">--}}
+{{--													<a href="post-style-four.html" class="nav-link">Post Style Four</a>--}}
+{{--												</li>--}}
+{{--												<li class="nav-item">--}}
+{{--													<a href="post-style-five.html" class="nav-link">Post Style Five</a>--}}
+{{--												</li>--}}
+{{--											</ul>--}}
+{{--										</li>--}}
 
-										<li class="nav-item">
-											<a href="#" class="nav-link">
-												Post Without Sidebar
-												<i class="bx bx-chevron-right"></i>
-											</a>
-	
-											<ul class="dropdown-menu">
-												<li class="nav-item">
-													<a href="post-style-six.html" class="nav-link">Post Style Six</a>
-												</li>
-												<li class="nav-item">
-													<a href="post-style-seven.html" class="nav-link">Post Style Seven</a>
-												</li>
-												<li class="nav-item">
-													<a href="post-style-eight.html" class="nav-link">Post Style Eight</a>
-												</li>
-												<li class="nav-item">
-													<a href="post-style-nine.html" class="nav-link">Post Style Nine</a>
-												</li>
-												<li class="nav-item">
-													<a href="post-style-ten.html" class="nav-link">Post Style Ten</a>
-												</li>
-											</ul>
-										</li>
+{{--										<li class="nav-item">--}}
+{{--											<a href="#" class="nav-link">--}}
+{{--												Post Without Sidebar--}}
+{{--												<i class="bx bx-chevron-right"></i>--}}
+{{--											</a>--}}
+{{--	--}}
+{{--											<ul class="dropdown-menu">--}}
+{{--												<li class="nav-item">--}}
+{{--													<a href="post-style-six.html" class="nav-link">Post Style Six</a>--}}
+{{--												</li>--}}
+{{--												<li class="nav-item">--}}
+{{--													<a href="post-style-seven.html" class="nav-link">Post Style Seven</a>--}}
+{{--												</li>--}}
+{{--												<li class="nav-item">--}}
+{{--													<a href="post-style-eight.html" class="nav-link">Post Style Eight</a>--}}
+{{--												</li>--}}
+{{--												<li class="nav-item">--}}
+{{--													<a href="post-style-nine.html" class="nav-link">Post Style Nine</a>--}}
+{{--												</li>--}}
+{{--												<li class="nav-item">--}}
+{{--													<a href="post-style-ten.html" class="nav-link">Post Style Ten</a>--}}
+{{--												</li>--}}
+{{--											</ul>--}}
+{{--										</li>--}}
 
-										<li class="nav-item">
-											<a href="#" class="nav-link">
-												Shop
-												<i class="bx bx-chevron-right"></i>
-											</a>
-	
-											<ul class="dropdown-menu">
-												<li class="nav-item">
-													<a href="shop.html" class="nav-link">Shop</a>
-												</li>
-												<li class="nav-item">
-													<a href="cart.html" class="nav-link">Cart</a>
-												</li>
-												<li class="nav-item">
-													<a href="checkout.html" class="nav-link">Checkout</a>
-												</li>
-												<li class="nav-item">
-													<a href="product-details.html" class="nav-link">Product Details</a>
-												</li>
-											</ul>
-										</li>
+{{--										<li class="nav-item">--}}
+{{--											<a href="#" class="nav-link">--}}
+{{--												Shop--}}
+{{--												<i class="bx bx-chevron-right"></i>--}}
+{{--											</a>--}}
+{{--	--}}
+{{--											<ul class="dropdown-menu">--}}
+{{--												<li class="nav-item">--}}
+{{--													<a href="shop.html" class="nav-link">Shop</a>--}}
+{{--												</li>--}}
+{{--												<li class="nav-item">--}}
+{{--													<a href="cart.html" class="nav-link">Cart</a>--}}
+{{--												</li>--}}
+{{--												<li class="nav-item">--}}
+{{--													<a href="checkout.html" class="nav-link">Checkout</a>--}}
+{{--												</li>--}}
+{{--												<li class="nav-item">--}}
+{{--													<a href="product-details.html" class="nav-link">Product Details</a>--}}
+{{--												</li>--}}
+{{--											</ul>--}}
+{{--										</li>--}}
 
-										<li class="nav-item">
-											<a href="#" class="nav-link">
-												User
-												<i class="bx bx-chevron-right"></i>
-											</a>
+{{--										<li class="nav-item">--}}
+{{--											<a href="#" class="nav-link">--}}
+{{--												User--}}
+{{--												<i class="bx bx-chevron-right"></i>--}}
+{{--											</a>--}}
 
-											<ul class="dropdown-menu">
-												<li class="nav-item">
-													<a href="log-in.html" class="nav-link">Log In</a>
-												</li>
-												<li class="nav-item">
-													<a href="sign-in.html" class="nav-link">Sign In</a>
-												</li>
-												<li class="nav-item">
-													<a href="recover-password.html" class="nav-link">Recover Password</a>
-												</li>
-											</ul>
-										</li>
+{{--											<ul class="dropdown-menu">--}}
+{{--												<li class="nav-item">--}}
+{{--													<a href="log-in.html" class="nav-link">Log In</a>--}}
+{{--												</li>--}}
+{{--												<li class="nav-item">--}}
+{{--													<a href="sign-in.html" class="nav-link">Sign In</a>--}}
+{{--												</li>--}}
+{{--												<li class="nav-item">--}}
+{{--													<a href="recover-password.html" class="nav-link">Recover Password</a>--}}
+{{--												</li>--}}
+{{--											</ul>--}}
+{{--										</li>--}}
 
-										<li class="nav-item">
-											<a href="author.html" class="nav-link">Author Page</a>
-										</li>
+{{--										<li class="nav-item">--}}
+{{--											<a href="author.html" class="nav-link">Author Page</a>--}}
+{{--										</li>--}}
 
-										<li class="nav-item">
-											<a href="terms-conditions.html" class="nav-link">Terms & Conditions</a>
-										</li>
+{{--										<li class="nav-item">--}}
+{{--											<a href="terms-conditions.html" class="nav-link">Terms & Conditions</a>--}}
+{{--										</li>--}}
 
-										<li class="nav-item">
-											<a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
-										</li>
+{{--										<li class="nav-item">--}}
+{{--											<a href="privacy-policy.html" class="nav-link">Privacy Policy</a>--}}
+{{--										</li>--}}
 
-										<li class="nav-item">
-											<a href="coming-soon.html" class="nav-link">Coming Soon</a>
-										</li>
+{{--										<li class="nav-item">--}}
+{{--											<a href="coming-soon.html" class="nav-link">Coming Soon</a>--}}
+{{--										</li>--}}
 
-										<li class="nav-item">
-											<a href="404.html" class="nav-link">404 Error Page</a>
-										</li>
-									</ul>
+{{--										<li class="nav-item">--}}
+{{--											<a href="404.html" class="nav-link">404 Error Page</a>--}}
+{{--										</li>--}}
+{{--									</ul>--}}
 								</li>
 
 								<li class="nav-item">
@@ -169,14 +169,14 @@
 								</li>
 
 								<li class="nav-item">
-									<a href="{{url('video')}}" class="nav-link">Video</a>
+									<a href="{{route('video')}}" class="nav-link">Video</a>
 
-								
+
 								<li class="nav-item">
-									<a href="{{url('contact')}}" class="nav-link">Contact</a>
+									<a href="{{route('contact')}}" class="nav-link">Contact</a>
 								</li>
 							</ul>
-							
+
 							<!-- Start Other Option -->
 							<div class="others-option">
 								<div class="follow">
@@ -222,7 +222,7 @@
 								<div class="option-item">
 									<i class="search-btn bx bx-search"></i>
 									<i class="close-btn bx bx-x"></i>
-									
+
 									<div class="search-overlay search-popup">
 										<div class='search-box'>
 											<form class="search-form">

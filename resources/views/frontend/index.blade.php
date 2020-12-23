@@ -38,7 +38,7 @@
 								<a href="post-style-one.html">
 									<h3>Why We Need for Guidelines for Brain Scan Data</h3>
 								</a>
-	
+
 								<ul>
 									<li>
 										<a href="#" class="admin">
@@ -63,12 +63,12 @@
 									<span class="blog-link">
 										IT
 									</span>
-		
+
 									<div class="main-blog-content">
 										<a href="post-style-one.html">
 											<h3>What Would It Take To Shut-down the Internet</h3>
 										</a>
-			
+
 										<ul>
 											<li>
 												<a href="#" class="admin">
@@ -91,12 +91,12 @@
 									<span class="blog-link">
 										Tech
 									</span>
-		
+
 									<div class="main-blog-content">
 										<a href="post-style-one.html">
 											<h3>What Would It Take To Shut-down the Internet</h3>
 										</a>
-			
+
 										<ul>
 											<li>
 												<a href="#" class="admin">
@@ -125,7 +125,7 @@
 								<a href="post-style-one.html">
 									<h3>How To Build Artificial Intelligence you can trust</h3>
 								</a>
-	
+
 								<ul>
 									<li>
 										<a href="#" class="admin">
@@ -146,7 +146,7 @@
 		</section>
 		<!-- End Main Blog Area -->
 
-		
+
 
 		<!-- Start Latest Project Area -->
 		<section class="latest-project-area pb-70">
@@ -156,10 +156,12 @@
 				</div>
 
 				<div class="row">
+
+                    @foreach($posts as $p)
 					<div class="col-lg-4 col-md-6">
 						<div class="single-featured">
 							<a href="post-style-one.html">
-								<img src=" public/frontend/assets/img/home-two/technology-img/1.jpg" alt="Image">
+								<img src="{{URL::to('/')}}/public/media/post_img/{{$p->image}}" style="width:200px" alt="Image">
 							</a>
 
 							<div class="featured-content">
@@ -177,79 +179,19 @@
 								</ul>
 
 								<a href="post-style-one.html">
-									<h3>The Two Most Important Tools to Reconnect With Your Partner</h3>
+									<h3>{{$p -> title}}</h3>
 								</a>
 
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere laboriosam eveniet debitis tenetur, eaque aliquid recusandae expedita. Porro dicta delectus</p>
-								
+								<p>{!! htmlspecialchars_decode($p->content) !!}</p>
+
 								<a href="post-style-one.html" class="read-more">Read More</a>
 							</div>
 						</div>
 					</div>
+                    @endforeach
 
-					<div class="col-lg-4 col-md-6">
-						<div class="single-featured">
-							<a href="post-style-one.html">
-								<img src=" public/frontend/assets/img/home-two/technology-img/2.jpg" alt="Image">
-							</a>
 
-							<div class="featured-content">
-								<ul>
-									<li>
-										<a href="#" class="admin">
-											<i class="bx bx-user"></i>
-											Admin By Kilva Walker
-										</a>
-									</li>
-									<li>
-										<i class="bx bx-calendar"></i>
-										26 Jun 2020
-									</li>
-								</ul>
 
-								<a href="post-style-one.html">
-									<h3>Genderless Kei – Japan’s Hot New Fashion Trend </h3>
-								</a>
-
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere laboriosam eveniet debitis tenetur, eaque aliquid recusandae expedita. Porro dicta delectus</p>
-								
-								<a href="post-style-one.html" class="read-more">Read More</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6">
-						<div class="single-featured">
-							<a href="post-style-one.html">
-								<img src=" public/frontend/assets/img/home-two/technology-img/3.jpg" alt="Image">
-							</a>
-
-							<div class="featured-content">
-								<ul>
-									<li>
-										<a href="#" class="admin">
-											<i class="bx bx-user"></i>
-											Admin By Jexk Walker
-										</a>
-									</li>
-									<li>
-										<i class="bx bx-calendar"></i>
-										27 Jun 2020
-									</li>
-								</ul>
-
-								<a href="post-style-one.html">
-									<h3>The Next Big Thing in Fashion? Not Washing Your Clothes.</h3>
-								</a>
-
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere laboriosam eveniet debitis tenetur, eaque aliquid recusandae expedita. Porro dicta delectus</p>
-								
-								<a href="post-style-one.html" class="read-more">Read More</a>
-							</div>
-						</div>
-					</div>
-
-					
 				</div>
 			</div>
 		</section>
@@ -273,7 +215,7 @@
 								<a href="post-style-one.html">
 									<h3>The Two Most Important Tools to Reconnect With Your Partner</h3>
 								</a>
-	
+
 								<ul>
 									<li>
 										<a href="#" class="admin">
@@ -301,7 +243,7 @@
 								<a href="post-style-one.html">
 									<h3>What Would It Take To Shut-down the Internet</h3>
 								</a>
-	
+
 								<ul>
 									<li>
 										<a href="#" class="admin">
@@ -329,7 +271,7 @@
 								<a href="post-style-one.html">
 									<h3>Genderless Kei – Japan’s Hot New Fashion Trend</h3>
 								</a>
-	
+
 								<ul>
 									<li>
 										<a href="#" class="admin">
@@ -357,7 +299,7 @@
 								<a href="post-style-one.html">
 									<h3>Extreme Athleticism Is the New Midlife Crisis</h3>
 								</a>
-	
+
 								<ul>
 									<li>
 										<a href="#" class="admin">
@@ -385,7 +327,7 @@
 								<a href="post-style-one.html">
 									<h3>The 4 convolution's Neural Network Models That Can Classify</h3>
 								</a>
-	
+
 								<ul>
 									<li>
 										<a href="#" class="admin">
@@ -413,7 +355,7 @@
 								<a href="post-style-one.html">
 									<h3>Do You Want Stronger Friendships, a More Balanced Mindset?</h3>
 								</a>
-	
+
 								<ul>
 									<li>
 										<a href="#" class="admin">
@@ -451,7 +393,7 @@
 								<a href="blog-detauls.html">
 									<h3>Advantage & Disadvantages of having Matchbook</h3>
 								</a>
-	
+
 								<span>
 									<i class="bx bx-calendar"></i>
 									25 Jun 2020
@@ -470,7 +412,7 @@
 								<a href="blog-detauls.html">
 									<h3>The Scariest Moment is Always Just Before You</h3>
 								</a>
-	
+
 								<span>
 									<i class="bx bx-calendar"></i>
 									26 Jun 2020
@@ -489,7 +431,7 @@
 								<a href="blog-detauls.html">
 									<h3>The Expert's Guide To Surviving long Haul Flights</h3>
 								</a>
-	
+
 								<span>
 									<i class="bx bx-calendar"></i>
 									27 Jun 2020
@@ -508,7 +450,7 @@
 								<a href="blog-detauls.html">
 									<h3>The Two Most Important With Your Partner</h3>
 								</a>
-								
+
 								<span>
 									<i class="bx bx-calendar"></i>
 									27 Jun 2020
@@ -527,7 +469,7 @@
 								<a href="blog-detauls.html">
 									<h3>I Moved Across the Country and Never Back</h3>
 								</a>
-								
+
 								<span>
 									<i class="bx bx-calendar"></i>
 									27 Jun 2020
@@ -546,7 +488,7 @@
 								<a href="blog-detauls.html">
 									<h3>The Expert's Guide To Surviving long Haul Flights</h3>
 								</a>
-								
+
 								<span>
 									<i class="bx bx-calendar"></i>
 									27 Jun 2020
@@ -565,7 +507,7 @@
 								<a href="blog-detauls.html">
 									<h3>Advantage & Disadvantages of having Matchbook</h3>
 								</a>
-								
+
 								<span>
 									<i class="bx bx-calendar"></i>
 									27 Jun 2020
@@ -584,7 +526,7 @@
 								<a href="blog-detauls.html">
 									<h3>The Argument For Short Meditations</h3>
 								</a>
-	
+
 								<span>
 									<i class="bx bx-calendar"></i>
 									27 Jun 2020
@@ -603,7 +545,7 @@
 								<a href="blog-detauls.html">
 									<h3>Do You Want Stronger Friendships, a More?</h3>
 								</a>
-								
+
 								<span>
 									<i class="bx bx-calendar"></i>
 									27 Jun 2020
@@ -616,7 +558,7 @@
 		</section>
 		<!-- End Main Blog List Area -->
 
-	
+
 
 		<!-- Start Latest News Slider Area -->
 		<section class="latest-news-slider-area">

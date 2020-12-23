@@ -12,9 +12,9 @@
                     <li class="submenu">
                         <a href="#"> <i class="fas fa-list-ul"></i><span> Posts</span> <span class="menu-arrow"></span></a>
                         <ul style="display: none;">
-                            <li><a href="invoice-report.html"> <i class="fas fa-caret-right"></i> All Post</a></li>
+                            <li><a href="{{route('post.index')}}"> <i class="fas fa-caret-right"></i> All Post</a></li>
                             <li><a href="{{route('post-category.index')}}"> <i class="fas fa-caret-right"></i> Categories</a></li>
-                             <li><a href="invoice-report.html"> <i class="fas fa-caret-right"></i> Tags</a></li>
+                             <li><a href="{{route('post-tag.index')}}"> <i class="fas fa-caret-right"></i> Tags</a></li>
 
                         </ul>
                     </li>

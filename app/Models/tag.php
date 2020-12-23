@@ -5,12 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class postCat extends Model
+class tag extends Model
 {
     use HasFactory;
-protected $guarded = [];
+    protected $guarded = [];
 
     public function posts(){
-        return $this -> belongsToMany('App\Models\post','cat_post','post_id','cat_id');
+        return $this -> belongsToMany('App\Models\post');
     }
 }
+
+
